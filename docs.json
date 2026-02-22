@@ -1,68 +1,74 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "almond",
+  "name": "Dimension AI",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#6b62f2",
+    "light": "#8081f9",
+    "dark": "#533be5"
+  },
+  "fonts": {
+    "family": "DM Sans"
+  },
+  "appearance": {
+    "default": "dark"
   },
   "favicon": "/favicon.svg",
+  "search": {
+    "prompt": "Search docs..."
+  },
+  "background": {
+    "decoration": "gradient"
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "mcp"
+    ]
+  },
+  "seo": {
+    "indexing": "all"
+  },
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "faq"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Core Features",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "chat",
+              "artifacts",
+              "workflows",
+              "skills"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Productivity",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "proactive-features"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Extend",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "integrations",
+              "custom-mcp"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Trust & Safety",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "security"
             ]
           }
         ]
@@ -71,14 +77,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "New Chat",
+          "href": "https://dimension.dev/chat/new",
+          "icon": "message-plus"
         }
       ]
     }
@@ -90,33 +91,56 @@
   "navbar": {
     "links": [
       {
+        "label": "Status",
+        "href": "https://status.dimension.dev"
+      },
+      {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@dimension.dev"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open App",
+      "href": "https://dimension.dev"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+      "x": "https://x.com/joindimension",
+      "github": "https://github.com/dimensionhq"
+    },
+    "links": [
+      {
+        "header": "Product",
+        "items": [
+          {
+            "label": "Open App",
+            "href": "https://dimension.dev"
+          },
+          {
+            "label": "Download",
+            "href": "https://dimension.dev/download"
+          }
+        ]
+      },
+      {
+        "header": "Resources",
+        "items": [
+          {
+            "label": "Support",
+            "href": "mailto:support@dimension.dev"
+          },
+          {
+            "label": "Security",
+            "href": "/security"
+          },
+          {
+            "label": "Status",
+            "href": "https://status.dimension.dev"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -1,0 +1,53 @@
+---
+title: "Custom MCP integrations"
+description: "Connect any tool to Dimension using the Model Context Protocol."
+sidebarTitle: "Custom MCP"
+icon: "puzzle-piece"
+mode: "wide"
+---
+
+If you use a tool that Dimension doesn't natively support, you can connect it yourself using a custom MCP (Model Context Protocol) server.
+
+<Note>Before setting up a custom integration, check the [Integrations](/integrations) page — Dimension already has native support for tools like Linear, Notion, GitHub, Sentry, and Stripe, which offer a smoother experience out of the box.</Note>
+
+## Adding a custom integration
+
+<Steps>
+
+<Step title="Open Integrations">
+Navigate to the **Integrations** page in the app.
+</Step>
+
+<Step title="Create a new integration">
+Click **New Integration** and provide:
+
+- **Name** — What you want to call this integration
+- **Description** — What the integration does (this helps Dimension understand when to use it)
+</Step>
+
+<Step title="Authenticate">
+Provide the server URL and authenticate:
+
+<CodeGroup>
+```bash Streamable HTTP
+https://mcp.example.com/mcp
+```
+```bash SSE (Legacy)
+https://mcp.example.com/sse
+```
+</CodeGroup>
+
+If the server supports OAuth, you'll be taken through an OAuth flow. Otherwise, provide an API key.
+</Step>
+
+<Step title="Confirm capabilities">
+Dimension auto-discovers the server's capabilities when you enter the URL. Review the available tools and confirm the integration.
+</Step>
+
+</Steps>
+
+<Warning>Only connect MCP servers you trust. A custom integration can read and act on your data just like a native one — make sure you understand what the server has access to.</Warning>
+
+## What you can do with it
+
+Once connected, Dimension can use your custom integration just like any built-in one — reading data, taking actions, and using it in chat, workflows, and skills.

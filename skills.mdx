@@ -1,0 +1,73 @@
+---
+title: "Skills"
+description: "Teach Dimension how to handle specific tasks your way."
+sidebarTitle: "Skills"
+icon: "wand-magic-sparkles"
+mode: "wide"
+---
+
+Skills teach Dimension how you work. They can be simple rules ("always sign off emails with just my first name") or deep knowledge that Dimension learns by researching your tools. Unlike [workflows](/workflows) which run automatically, skills are used during chat — Dimension automatically picks the right skill when it's relevant, or you can ask for one directly.
+
+## What makes up a skill
+
+- **Prompt** — Instructions or a learning task for Dimension
+- **Integrations** — Which tools the skill can access
+- **Memory** — What the skill has learned over time from research and your feedback
+
+## Examples
+
+<Tabs>
+  <Tab title="Writing tone">
+    Tell Dimension how you communicate:
+
+    ```
+    When drafting emails or Slack messages, match my writing tone:
+    - Keep it casual and direct
+    - Use short sentences, no filler
+    - Never use "I hope this email finds you well" or similar
+    - Sign off with just my first name
+    ```
+
+    Dimension automatically applies this whenever you ask it to write a message.
+  </Tab>
+  <Tab title="Learning from data">
+    Skills can actively learn from your connected tools. For example:
+
+    ```
+    Learn how our fund evaluates investments by reading through
+    our investment memos and partner meeting notes in Google Drive.
+    Understand our thesis, what we look for in founders, and our
+    typical deal structure.
+    ```
+
+    Dimension researches your data, builds up knowledge, and then uses it whenever you ask about evaluating a deal or drafting investment notes.
+  </Tab>
+  <Tab title="Bug triage">
+    Encode your team's process into a skill:
+
+    ```
+    When I ask you to triage a bug:
+    - Check Sentry for related errors
+    - Look for similar issues in Linear
+    - If it's a new bug, create a Linear issue with severity based on error frequency
+    - Post a summary in #engineering on Slack
+    ```
+  </Tab>
+</Tabs>
+
+## Learning from feedback
+
+Skills get better over time. After a skill runs, you can give it feedback in the **Learn** section — tell it what to do differently, and it updates its memory. Each correction makes the skill more aligned with how you work.
+
+<Tip>Use the **Learn** section after every skill run to fine-tune Dimension's behavior. The more feedback you give, the better the skill gets.</Tip>
+
+## Skills vs. workflows
+
+| | Skills | Workflows |
+|---|--------|-----------|
+| **When they run** | On-demand in chat | Automatically on a schedule or trigger |
+| **Learning** | Gets better from your feedback | Static prompt |
+
+## Marketplace
+
+Browse and install pre-built skills from the marketplace, organized by role. You can also publish your own skills for others to use.
